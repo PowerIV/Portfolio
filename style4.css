@@ -1,0 +1,67 @@
+body{
+    background-image:url("image8.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.navbar {
+  overflow: hidden;
+  background-color:lightblue;
+  position: fixed;
+  top:0;
+  width:200%;
+  color:white;
+}
+h2{
+    text-align:center;
+    text-decoration:overline underline;
+}
+.navbar a {
+  float: left;
+  top:0;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 7px 8px;
+  text-decoration: none;
+}
+form{
+    float:left;
+}
+.div{
+    height:100px;
+    margin:50px;
+    width:200px;
+    border-style:none;
+    background-image:url("image1.jpg");
+    background-size:cover;
+    padding:50px;
+    float:left;
+}
+.div:hover,.div1:hover{
+    background-image:url("image3.jpg");
+}
+@keyframes slide{
+  from{
+    margin-left:100%;
+    }
+    to{
+        margin-left:0%;
+    }
+}
+.div2{
+    height:100px;
+    margin:50px;
+    width:600px;
+    border-style:none;
+    background-color:lightblue;
+    background-size:cover;
+    padding:50px;
+    float:left;
+    align-items:center;
+    font-family:inherit;
+    font-size:40px;
+    border-radius:25px;
+    animation:3s infinite;
+    animation-name:slide;
+    animation-timing-function:linear;
+}

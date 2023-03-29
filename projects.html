@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="website for itebogeng">
+        <meta name="viewport" content="width=divice-width,initial scale=1">
+        <meta name="author" content="Itebogeng">
+        <link rel = "icon" href = "image7.jpg" type = "image/x-icon">
+        <link rel = "stylesheet" href = "style2.css">
+        <title>Itebogeng's Portfolio</title>
+    </head>
+    <body>
+        <nav>
+                <ul>
+                    <li><a href = "index.html"><b>HOME</b></a></li>
+                    <li><a href = "projects.html"><b>PROJECTS</b></a></li>
+                    <li><a href = "contact.html"><b>CONTACTS</b></a></li>
+                </ul>
+            </nav>
+        <div>
+  <h2>My First Project</h2>
+  <p>The project was to create a simple website for my family's rastuarant after i have learned html and publishing it in github<br>
+   CLICK ON THE IMAGES BELOW:</p>
+</div>
+<div class="row">
+  <div class="column">
+    <img src="image13.png" alt="Starter" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image14.png" alt="Menu" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image15.png" alt="Contact" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+        <nav>
+                <ul>
+                    <li><a href ="https://poweriv.github.io/valantia/"><b>Amber's Restuarant</b></a></li>
+                </ul>
+            </nav>
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+    function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+        </script>
+        <div>
+  <h2>My Second Project</h2>
+  <p>The project was to create two webpages the first one was about myself my academics and my favourite cars while the last page was about my weekend and my to do list for the next day and publishing it in github<br>
+      Click ON THE IMAGES BELOW:</p>
+</div>
+<div class="row">
+  <div class="column">
+    <img src="image17.png" alt="about my self" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image16.png" alt="my weekend" style="width:100%" onclick="myFunction(this);">
+  </div>
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+    <nav>
+         <ul>
+             <li><a href ="https://poweriv.github.io/l-Khunou/"><b>About Myself</b></a></li>
+          </ul>
+      </nav>
+<script>
+    function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+    </script>
+
+</body>
+</html>
